@@ -1,15 +1,12 @@
 name: Deploy to EC2 Docker
 
 on:
-  workflow_run:
-    workflows: ["Publicar imagen Docker"]   # nombre EXACTO del docker.yml
-    types: [completed]
-
+  push:
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
   deploy:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
