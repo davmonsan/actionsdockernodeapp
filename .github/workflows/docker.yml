@@ -40,5 +40,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: | #(1)
-            marnau777/actionsdockernodeapp:latest 
-            ghcr.io/marnau777/actionsdockernodeapp:latest 
+            davmonsan/actionsdockernodeapp:latest 
+            ghcr.io/davmonsan/actionsdockernodeapp:latest 
